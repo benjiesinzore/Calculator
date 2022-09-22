@@ -9,7 +9,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -34,7 +33,7 @@ fun Calculator(
         ){
 
             Text(
-                text = state.number1 + (state.operation ?: "") + state.number2,
+                text = state.number1 + (state.operation ?. symbol ?: "") + state.number2,
                 textAlign = TextAlign.End,
                 modifier = Modifier
                     .fillMaxWidth()
@@ -46,7 +45,14 @@ fun Calculator(
             )
 
             Row(
-                modifier = Modifier.fillMaxWidth(),
+                modifier = Modifier
+//                    .padding(
+//                        bottom = 10.dp, top = 10.dp,
+//                        start = 10.dp, end = 10.dp
+//                    )
+
+                    .fillMaxWidth(),
+
                 horizontalArrangement = Arrangement.spacedBy(bottomSpacing)
             ){
 
@@ -88,7 +94,13 @@ fun Calculator(
 
 
             Row(
-                modifier = Modifier.fillMaxWidth(),
+                modifier = Modifier
+//                    .padding(
+//                        bottom = 10.dp, top = 10.dp,
+//                        start = 10.dp, end = 10.dp
+//                    )
+
+                    .fillMaxWidth(),
                 horizontalArrangement = Arrangement.spacedBy(bottomSpacing)
             ){
 
@@ -142,7 +154,13 @@ fun Calculator(
 
 
             Row(
-                modifier = Modifier.fillMaxWidth(),
+                modifier = Modifier
+//                    .padding(
+//                        bottom = 10.dp, top = 10.dp,
+//                        start = 10.dp, end = 10.dp
+//                    )
+
+                    .fillMaxWidth(),
                 horizontalArrangement = Arrangement.spacedBy(bottomSpacing)
             ){
 
@@ -196,7 +214,13 @@ fun Calculator(
 
 
             Row(
-                modifier = Modifier.fillMaxWidth(),
+                modifier = Modifier
+//                    .padding(
+//                        bottom = 10.dp, top = 10.dp,
+//                        start = 10.dp, end = 10.dp
+//                    )
+
+                    .fillMaxWidth(),
                 horizontalArrangement = Arrangement.spacedBy(bottomSpacing)
             ){
 
@@ -249,7 +273,13 @@ fun Calculator(
             }
 
             Row(
-                modifier = Modifier.fillMaxWidth(),
+                modifier = Modifier
+//                    .padding(
+//                        bottom = 10.dp, top = 10.dp,
+//                        start = 10.dp, end = 10.dp
+//                    )
+
+                    .fillMaxWidth(),
                 horizontalArrangement = Arrangement.spacedBy(bottomSpacing)
             ){
 
