@@ -144,7 +144,7 @@ fun Calculator(
                 CalculatorButton(
                     symbol = "X",
                     modifier = Modifier
-                        .background(Color.DarkGray)
+                        .background(Color.Red)
                         .aspectRatio(1f)
                         .weight(1f),
                     onClick = {
