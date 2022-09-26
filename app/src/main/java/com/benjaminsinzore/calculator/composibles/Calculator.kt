@@ -28,6 +28,7 @@ fun Calculator(
         Column (
             modifier = Modifier
                 .fillMaxWidth()
+                .fillMaxHeight()
                 .align(Alignment.BottomCenter),
             verticalArrangement = Arrangement.spacedBy(bottomSpacing)
         ){
