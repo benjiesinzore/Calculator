@@ -22,6 +22,7 @@ fun Calculator(
     bottomSpacing: Dp,
     modifier: Modifier = Modifier,
     onAction: (CalculatorActions) -> Unit
+
 ) {
 
     Box(modifier = modifier){
@@ -47,11 +48,6 @@ fun Calculator(
 
             Row(
                 modifier = Modifier
-//                    .padding(
-//                        bottom = 10.dp, top = 10.dp,
-//                        start = 10.dp, end = 10.dp
-//                    )
-
                     .fillMaxWidth(),
 
                 horizontalArrangement = Arrangement.spacedBy(bottomSpacing)
@@ -96,10 +92,6 @@ fun Calculator(
 
             Row(
                 modifier = Modifier
-//                    .padding(
-//                        bottom = 10.dp, top = 10.dp,
-//                        start = 10.dp, end = 10.dp
-//                    )
 
                     .fillMaxWidth(),
                 horizontalArrangement = Arrangement.spacedBy(bottomSpacing)
@@ -156,11 +148,6 @@ fun Calculator(
 
             Row(
                 modifier = Modifier
-//                    .padding(
-//                        bottom = 10.dp, top = 10.dp,
-//                        start = 10.dp, end = 10.dp
-//                    )
-
                     .fillMaxWidth(),
                 horizontalArrangement = Arrangement.spacedBy(bottomSpacing)
             ){
@@ -216,10 +203,6 @@ fun Calculator(
 
             Row(
                 modifier = Modifier
-//                    .padding(
-//                        bottom = 10.dp, top = 10.dp,
-//                        start = 10.dp, end = 10.dp
-//                    )
 
                     .fillMaxWidth(),
                 horizontalArrangement = Arrangement.spacedBy(bottomSpacing)
@@ -275,10 +258,6 @@ fun Calculator(
 
             Row(
                 modifier = Modifier
-//                    .padding(
-//                        bottom = 10.dp, top = 10.dp,
-//                        start = 10.dp, end = 10.dp
-//                    )
 
                     .fillMaxWidth(),
                 horizontalArrangement = Arrangement.spacedBy(bottomSpacing)
